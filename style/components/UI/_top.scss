@@ -1,0 +1,35 @@
+.top__bg {
+    background-image: url(/img/top_scene.svg);
+    background-image: cover;
+    background-repeat: no-repeat;   
+    position: absolute;   
+    width: 1285px;
+    height: 951px;
+    z-index: -1;
+}
+.top-content {
+    &__title {
+        padding-top: 17px;
+        width: 741px;
+        height: 300px;
+        font-family: DM Serif Display;
+        font-weight: normal;
+        font-size: 100px;
+        line-height: 100%;
+        align-items: center;
+        color: #fff;
+    }
+    &__btn {
+        margin-top: 10px;
+    }
+}
+.top__car {
+    background-image: url(/img/top_car.svg);
+    background-repeat: no-repeat;   
+    position: absolute;  
+    height: 397px;
+    width: 600px;
+    margin-top: 180px;
+    margin-left: -240px;
+    
+}

@@ -1,0 +1,174 @@
+footer {
+    padding-top: 679px;
+}
+
+.footer_bg {
+    background-image: url(/img/vector_foter.svg);
+    background-repeat: no-repeat;
+    width: 1395px;
+    height: 661.51px;
+    background-color: #0f264c;
+    margin-top: -246px;
+    z-index: -1;
+    position: absolute;
+    border-radius: 0 100px 0 0 ;
+}
+.header-bottom {
+    margin-top: -200px;
+}
+.bottom_car {
+    // 2 hemispheres have to add separated
+    position: absolute;
+    background-image: url(/img/bottom_car.svg);
+    background-repeat: no-repeat;
+    width: 377px;
+    height: 210px;
+    margin-top: -417px;
+}
+
+.bottom {
+    margin-bottom: 25px;
+    margin-top: -25px;
+    &_links {
+        justify-content: space-between;
+    }
+}
+
+.bottom-content {
+    transform: translate(140px, -367px);
+    justify-content: flex-start;
+    &__desc {
+        transform: translate(-95px, 220px);
+        &::before {
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 160px;
+            background-color: #ED4D47;
+            border-radius: 5px 0 0 5px;
+            margin-left: -50px;
+        }
+    }
+    &__form {
+        width: 550px;
+        height: 440px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 52px 75px;
+        box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+        label {
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 40px;
+            color: #402B2B;
+            height: 38px;
+        }
+        label[for="mail"] {
+            display: inline-block;
+            margin-top: 30px;
+        }
+        input {
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 40px;
+            width: 400px;
+            height: 60px;
+            background: #FFFFFF;
+            border: 1px solid rgba(238, 77, 71, 0.5);
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-top: 8px;
+        }
+        input:focus {
+            outline: none;
+            border: 2px solid #EE4D47;
+            box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.2);
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 40px;
+            color: #402B2B;
+        }
+        input[type=email] {
+            margin-top: 10px;
+        }
+        input[type=text],
+        input[type=email] {
+            padding: 11px 0 11px 40px;
+        }
+        
+        button {
+            margin-top: 12px;
+        }
+    }
+    &__desc {
+        width: 330px;
+        height: 140px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+}
+
+
+.copy {
+    margin-left: -5px;
+    width: 465px;
+    height: 40px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    color: #402B2B;
+}
+.social_link{
+    justify-content: space-between;
+    margin-top: -2px;
+    padding-right: 100px;
+    li {
+        width: 36px;
+        height: 36px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    &__fa {
+        background-image: url(/img/f.svg);
+        
+    }
+    &__tw {
+        background-image: url(/img/t.svg);
+    }
+    &__insta {
+        background-image: url(/img/i.svg);
+    }
+}
+
+.nav_bot {
+    justify-content: space-between;
+    transform: translate(-125px, -185px);
+    .logo_bottom {
+        background-image: url(/img/logo_bt.svg);
+        background-repeat: no-repeat;
+        width: 170px;
+        height: 41px;
+        transform: translate(120px, -13px);
+    }
+    .nav_bottom__item {
+        margin-right: 12px;
+        &:last-child{
+            margin-right: -25px;
+        }
+    }
+}

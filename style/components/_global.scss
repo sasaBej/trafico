@@ -1,0 +1,218 @@
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body {
+    background-color: #FEF8F5;
+}
+
+.site-container {
+    // max-width: 1600px;
+    // margin: 0 auto;
+    // overflow: hidden;
+}
+.main-content {
+    position: relative;
+    max-width: 1120px;
+    margin: 0 auto !important;
+    // overflow: hidden;
+}
+.flex{
+    display: flex;
+}
+
+.btn {
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    &:hover{
+        opacity: 1.2;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        // box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 12px 16px 0 rgba(0,0,0,0.24); test
+    }
+    &:active {
+        transform: translateY(4px);
+        // transition-duration: unset;
+        // test trasnition
+    }
+}
+.btn-orange {
+    cursor: pointer;
+    width: 220px;
+    height: 60px;
+    font-family: Rubik;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    padding: 21px 78px 20px 25px;
+    background-color: #EE4D47;
+    color: #FFFFFF;
+    white-space: nowrap;
+    border: none;
+    border-radius: 4px;
+    align-items: center;
+}
+.btn-orange::after {
+    content: url(/img/Union.svg);
+    padding-left: 24px;
+}
+.main__h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #EE4D47;
+}
+.main__p {
+    
+    
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    color: #402B2B;
+}
+
+.move_animation_left {
+    transition: transform .7s ease-in-out; 
+    transform: translateX(-400%);
+}
+.move_animation_right {
+    transition: transform .7s ease-in-out; 
+    transform: translateX(400%);
+}
+
+.move_animation {
+    transform: translateX(0);
+}
+.nav__link {
+    &:hover {
+        opacity: .8;
+    }
+    // &:active {
+    //     // 
+    // }
+}
+
+
+// social link
+.social_link {
+    li:hover {
+        opacity: .8;
+    }
+    li:active {
+        transform: translateY(3px);
+    }
+}
+
+// plus symbol
+.button_plus{
+    cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-right: 35px;
+
+    &:before,
+    &:after{
+        content: "";
+        position: absolute;
+        background-color: rgba(238, 77, 71, 1);
+        transition: transform 0.25s ease-out;
+    }
+
+    /* Vertical line */
+    &:before{
+        top: 0;
+        left: 50%;
+        width: 4px;
+        height: 100%;
+        margin-left: -2px;
+    }
+
+    /* horizontal line */
+    &:after{
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        margin-top: -2px;
+    }
+    
+    
+}
+.button_minus {
+    cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-right: 35px;
+
+    &:before,
+    &:after{
+        content: "";
+        position: absolute;
+        background-color: rgba(238, 77, 71, 1);
+        transition: transform 0.25s ease-out;
+    }
+
+    /* Vertical line */
+    // &:before{
+    //     top: 0;
+    //     left: 50%;
+    //     width: 4px;
+    //     height: 100%;
+    //     margin-left: -2px;
+    // }
+
+    /* horizontal line */
+    // &:after{
+    //     top: 50%;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 4px;
+    //     margin-top: -2px;
+    // }
+
+
+
+
+        cursor: pointer;
+        
+        &:before { 
+            transform: rotate(90deg); 
+        }
+        &:after { 
+            transform: rotate(180deg); 
+        }
+    
+}
+
+

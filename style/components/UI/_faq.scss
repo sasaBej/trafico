@@ -1,0 +1,96 @@
+.faq {
+    padding-top: 219px;
+    height: 1500px;
+    &-top {
+        justify-content: space-between;
+        &-text {
+            padding-top: 104px;
+            &__desc {
+                padding-top: 1px;
+                font-family: DM Serif Display;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 48px;
+                line-height: 140%;
+                color: #402B2B;
+                width: 550px;
+                height: 200px;
+            }
+        }
+
+        
+        &__img {
+            position: absolute;
+            background-image: url(/img/bottom_guy.svg);
+            background-repeat: no-repeat;
+            width: 708px;
+            height: 492px;
+            transform: translateX(475px);
+        }
+        
+    }
+    &-questions {
+        padding-top: 121px;
+        
+        &__q {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            div {
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                width: 550px;
+                height: 90px;
+                background: #FFFFFF;
+                box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+                border-radius: 10px;
+                padding-left: 35px;
+                font-family: Rubik;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 30px;
+                display: flex;
+                align-items: center;
+                color: #402B2B;
+                margin-bottom: 10px;
+                
+            }
+            
+            
+            
+        }
+        
+    }
+}
+
+.questions_message {
+    display: none !important;
+}
+.divq.active .questions_message {
+    position: absolute;
+    display: block !important;
+    width: 550px;
+    background-color: #fff;
+    padding: 40px 35px 60px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center; 
+    color: #402B2B;
+    margin-top: -18px;
+    transition: .5s ease-in-out;
+}
+.faq-top__bg {
+    position: absolute;
+    height: 1500px;
+    width: 1170px;
+    background-image: url(/img/faq-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    transform: translate(190px, -566px);
+    z-index: -1;
+}

@@ -1,0 +1,19 @@
+.hta-container {
+    justify-content: space-between;
+    padding-top: 230px;
+    padding-left: 22px;
+    &__img {
+        background-image: url(/img/illustration__girl_call.svg);
+        width: 721px;
+        height: 681px;
+        margin-top: -81px;
+        margin-left: -135px;
+    }
+    &-text{
+        width: 510px;
+        padding-left: 55px;
+        &__desc {
+            padding-top: 26px;
+        }
+    }
+}
